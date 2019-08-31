@@ -1,0 +1,19 @@
+.team {
+
+  padding-left: 19%;
+  padding-right: rem(100px);
+
+  @include tablets(){
+     height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 27%;
+    padding-right: 27%;
+  }
+
+  @include phones() {
+    padding-left: 14%;
+    padding-right: 14%;
+    font-size:rem(14px);
+  }
+}

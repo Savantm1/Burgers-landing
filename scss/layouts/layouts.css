@@ -1,0 +1,43 @@
+.item1 {
+  background-image: url("../img/Rectangle 1.png"); }
+
+.item2 {
+  background-image: url("../img/Rectangle 2.png"); }
+
+.item3 {
+  background-image: url("../img/Rectangle 3.png"); }
+
+.item4 {
+  background-image: url("../img/Rectangle 4.png"); }
+
+.item5 {
+  background-image: url("../img/Rectangle 5.png"); }
+
+.item6 {
+  background-image: url("../img/Rectangle 6.png"); }
+
+.item7 {
+  background-image: url("../img/Rectangle 7.png"); }
+
+.item8 {
+  background-image: url("../img/Rectangle 8.png"); }
+
+html {
+  font-size: rem(13px);
+}
+body {
+  font-family: 'Ubuntu';
+  font-size: rem(13px);
+  line-height: rem(30px);
+  text-transform: uppercase; }
+
+.container {
+  width: rem(940px);
+  margin: 0 auto; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: rem(960px);
+  min-height: 100%;
+  overflow: hidden; }

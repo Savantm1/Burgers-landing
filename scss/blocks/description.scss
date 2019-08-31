@@ -1,0 +1,39 @@
+.description {
+  width: 50%;
+
+  @include tablets() {
+    width: 99%;
+  }
+
+  .description__item {
+
+    @include font_header;
+
+    margin-top: 6%;
+
+    @include tablets() {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    @include phones() {
+      font-size: rem(67px);
+    }
+  }
+
+  .description__item:last-child {
+
+    @include font_lifehack;
+
+    margin-top: 2%;
+    font-size: rem(64px);
+    line-height: rem(64px);
+
+    @include phones() {
+      margin-top: 0;
+      font-size: rem(54px);
+    }
+  }
+
+
+}

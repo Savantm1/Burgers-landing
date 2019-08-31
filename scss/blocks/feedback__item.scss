@@ -1,0 +1,99 @@
+.feedback__item {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+
+  width: 25%;
+  height: 50%;
+
+  color: #fff;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  &:hover {
+    .feedback__item--hover {
+      opacity: 1;
+
+    }
+
+  }
+
+  .feedback__item--hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: rem(50px) rem(15px);
+
+    background-color: rgba(#444646, .5);
+    opacity: 0;
+    transition: opacity .3s;
+
+    @include tablets() {
+      padding-top: rem(25px);
+      text-align: center;
+      padding: 6% 12%;
+    }
+
+    @include phones {
+      padding:18% 12%;
+
+    }
+  }
+
+  .feedback__header {
+    @include font_header;
+    filter: grayscale(0);
+    font-size: rem(16px);
+    line-height: rem(24px);
+
+    @include phones {
+      font-size: rem(26px);
+      line-height: 1;
+      margin-bottom: 13%;
+    }
+
+  }
+
+  .feedback__description {
+    text-transform: none;
+    font-size: rem(14px);
+
+    @include tablets() {
+      line-height: 1.7;
+    }
+    @include phones {
+      display: none;
+    }
+  }
+
+  .feedback__btn {
+    @include link_style_none;
+    @include btn;
+    background-color: $dark;
+    display: inline-block;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #1f2122;
+    }
+    @include tablets (){
+      margin-top: 3%;
+    }
+
+    @include phones {
+      content: 'читать отзыв';
+    }
+  }
+
+
+  @include tablets() {
+    width: 50%;
+    height: 25%;
+    background-size: cover;
+    background-position: center;
+  }
+
+}

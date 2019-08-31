@@ -1,0 +1,22 @@
+.contacts__footer {
+
+  @include flex-box;
+  width: rem(940px);
+  margin: 0 auto;
+  flex-direction: column;
+  text-transform: initial;
+
+
+
+  .telephone {
+
+    font-weight: bold;
+    color: $orange;
+    cursor: pointer;
+
+    .phone {
+      width: rem(10px);
+      height: rem(10px);
+    }
+  }
+}

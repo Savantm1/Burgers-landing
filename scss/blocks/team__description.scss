@@ -1,0 +1,30 @@
+.team__description{
+  @include tablets() {
+    margin-bottom: 25%;
+  }
+
+  @include phones {
+    margin-bottom: 0;
+  }
+}
+
+
+.team__title {
+  margin: 0;
+  padding: 0;
+  @include font_header;
+  margin-bottom: 3%;
+
+  @include tablets() {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+    margin-bottom: 13%;
+  }
+
+  @include phones {
+    margin-bottom: 6%;
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,60 @@
+@mixin flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin link_style_none {
+  text-decoration: none;
+  color: #fff;
+}
+
+@mixin list_style_none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin bg_size_image {
+  height: 100vh;
+  width: 100%;
+}
+
+@mixin font_header {
+  display: block;
+  font-family: 'Gagalin';
+  color: #f9b43b;
+  font-size: rem(74px);
+
+}
+
+@mixin font_lifehack {
+  font-family: 'Lifehack';
+  color: #fff;
+  text-transform: lowercase;
+  font-size: rem(65px);
+  // line-height: rem(60px);
+}
+
+@mixin font_description {
+  font-family: 'Ubuntu';
+  text-transform: none;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  text-align: center;
+}
+
+@mixin btn {
+
+  cursor: pointer;
+  @include link_style_none;
+
+  display: block;
+
+  padding: rem(9px) rem(14px);
+
+  border-radius: rem(5px);
+
+  font-size: rem(13px);
+  font-weight: 500;
+}

@@ -1,0 +1,22 @@
+  .welcome {
+    @include flex-box;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+
+    padding-bottom: 15%;
+
+    @include tablets() {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 27%;
+    }
+
+    @include phones() {
+
+      width:80%;
+      padding: 0;
+      justify-content: flex-start;
+
+     }
+  }

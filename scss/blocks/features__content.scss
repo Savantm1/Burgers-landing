@@ -1,0 +1,14 @@
+ .features__content {
+   @include flex-box;
+   align-items: flex-start;
+   margin-bottom: rem(30px);
+
+  @include tablets() {
+    margin-bottom: 20%;
+  }
+
+   @include phones () {
+     flex-direction: column;
+     margin-bottom: 15%;
+   }
+ }

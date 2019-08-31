@@ -1,0 +1,57 @@
+html {
+  font-size: 13px;
+
+  @include tablets() {
+    font-size: 13px;
+  }
+
+  @include phones() {
+    font-size: 12px;
+  }
+
+  line-height: 1.42;
+  font-family: 'Ubuntu';
+}
+
+
+
+body {
+  font-family: 'Ubuntu';
+
+  line-height: 1.42;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 95%;
+  max-width: rem(940px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper {
+
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: rem(1px);
+  height: rem(1px);
+  margin: rem(-1px);
+
+}
+
+img {
+width: 100%;
+height: 100%;
+}

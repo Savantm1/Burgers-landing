@@ -1,0 +1,72 @@
+   .features__item {
+     @include flex-box;
+     flex-direction: column;
+     justify-content: flex-start;
+     flex: 1;
+
+     @include phones () {
+       flex-direction: row;
+
+       margin-left: rem(20px);
+       margin-bottom: 3%;
+     }
+  //    .pic__img {
+  //     width: 15%;
+  //     height: 15%;
+  // }
+
+    .svg_icon {
+      width:100%;
+    }
+
+
+
+     .item_text_block {
+       display: flex;
+       flex-direction: column;
+
+      @include phones {
+
+        width:95%;
+        text-align: start;
+      }
+
+     }
+
+     .item__main_text {
+       @include font_lifehack;
+       letter-spacing: 0;
+       text-transform: none;
+       color: #000;
+       font-size: rem(24px);
+       line-height: rem(28px);
+       text-align: center;
+
+       @include phones {
+         text-align: start;
+       }
+     }
+
+     .item__img-wrap {
+        width: 33%;
+
+        // @include phones() {
+        //   width:40%;
+        // }
+     }
+
+     .item__description {
+       @include font_description;
+       font-family: 'Ubuntu';
+       font-weight: 500;
+       color: $dark;
+
+       &:nth-child(3) {
+         margin-top: 0;
+       }
+     }
+   }
+
+   .features__item:not(:last-child) {
+     margin-right: rem(15px);
+   }

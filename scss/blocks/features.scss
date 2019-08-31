@@ -1,0 +1,15 @@
+.features {
+  overflow: hidden;
+  min-height: rem(650px);
+  @include bg_size_image;
+  background: url("../img/bg.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include flex-box;
+
+  .container {
+    @include flex-box;
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,16 @@
+.feedback {
+
+  @include flex-box;
+  height: 100vh;
+  filter: grayscale(100%);
+  min-height: rem(650px);
+  overflow: hidden;
+}
+
+.feedback_list {
+  @include list_style_none;
+  @include flex-box;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}

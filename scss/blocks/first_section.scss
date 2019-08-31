@@ -1,0 +1,15 @@
+.first_section {
+  min-height: rem(650px);
+  overflow: hidden;
+
+
+
+  @include bg_size_image;
+  background: url("../img/bg-first\ section.jpg") center center no-repeat;
+  background-size: cover;
+
+  // @include tablets () {
+
+  //   min-height: rem(1024px);
+  // }
+}

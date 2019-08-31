@@ -1,0 +1,7 @@
+.team_section {
+  overflow: hidden;
+  background: url("../img/team_bg.png") center center no-repeat;
+  background-size: cover;
+  @include bg_size_image;
+  position: relative;
+}

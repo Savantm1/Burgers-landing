@@ -1,0 +1,42 @@
+@import "../scss/_misc/normalize.css";
+
+@import "../scss/_misc/media.scss";
+@import "../scss/_misc/fonts.scss";
+@import "../scss/_misc/mixins.scss";
+@import "../scss/_misc/variables.scss";
+
+@import "../scss/layouts/layouts.scss";
+
+
+@import "../scss/blocks/first_section.scss";
+@import "../scss/blocks/header.scss";
+@import "../scss/blocks/nav.scss";
+@import "../scss/blocks/order__link.scss";
+@import "../scss/blocks/slider.scss";
+@import "../scss/blocks/welcome.scss";
+@import "../scss/blocks/burger.scss";
+@import "../scss/blocks/description.scss";
+@import "../scss/blocks/arrow_next.scss";
+
+@import "../scss/blocks/slider.scss";
+
+@import "../scss/blocks/features.scss";
+@import "../scss/blocks/features__header.scss";
+@import "../scss/blocks/features__content.scss";
+@import "../scss/blocks/features__item.scss";
+@import "../scss/blocks/feedback.scss";
+@import "../scss/blocks/feedback__item.scss";
+
+@import "../scss/blocks/team_section.scss";
+@import "../scss/blocks/team.scss";
+@import "../scss/blocks/team__description.scss";
+@import "../scss/blocks/accordeon.scss";
+@import "../scss/blocks/team_section__side.scss";
+@import "../scss/blocks/menu_section.scss";
+@import "../scss/blocks/menu_accordeon.scss";
+
+@import "../scss/blocks/contacts.scss";
+@import "../scss/blocks/contacts__footer.scss";
+
+@import "../scss/blocks/form_section.scss";
+@import "../scss/blocks/form.scss";

@@ -1,0 +1,39 @@
+.nav {
+  margin-left: rem(50px);
+
+  font-size: 13px;
+  font-weight: 500;
+
+  @include tablets() {
+    display: none;
+  }
+}
+
+.nav__list {
+  @include flex-box;
+  @include list-style_none;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .nav__item:not(:last-child)::after {
+    content: "\2022";
+
+    position: relative;
+
+    margin: 0 rem(12px);
+
+    color: #fff;
+  }
+
+  .nav__link {
+    @include link_style_none;
+    box-sizing: border-box;
+    transition: 0.2s;
+
+    &:hover {
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+
+}

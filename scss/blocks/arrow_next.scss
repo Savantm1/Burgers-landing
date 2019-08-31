@@ -1,0 +1,14 @@
+.arrow_next {
+  position: absolute;
+  bottom: rem(32px);
+  left: 50%;
+  transform: translate(-50%);
+  display: block;
+
+  cursor: pointer;
+
+  .arrow-scroll {
+    width: rem(29px);
+    height: rem(14px);
+  }
+}

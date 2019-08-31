@@ -1,0 +1,12 @@
+.order__link {
+
+      @include link_style_none;
+      @include btn;
+      background-color: $orange;
+      font-size: rem(13px);
+      transition: 0.3s;
+
+    &:hover {
+      background-color: #c1401e;
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+  @include flex-box;
+
+  align-items: center;
+
+  padding-top: rem(10px);
+
+  font-size: rem(13px);
+  font-weight: 500;
+
+  .logo {
+    width: rem(92px);
+    height: rem(69px);
+
+  }
+
+  .hamburger_link {
+    margin-left: rem(20px);
+    display: none;
+
+    @include tablets () {
+      display: block;
+
+      margin-left: 4%;
+      margin-right: 2%;
+    }
+
+    @include phones () {
+      display: block;
+
+      margin-left: 8%;
+    }
+  }
+
+  .order {
+    @include tablets() {
+      margin-left: auto;
+    }
+  }
+}

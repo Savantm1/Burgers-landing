@@ -1,0 +1,39 @@
+var arr=['привет','loftschool'];
+
+arr.push(',я изучаю','javascript');
+
+4
+console.log(arr.length);
+
+for(var i=0;i<arr.length;i++){
+console.log(arr[i]);
+};
+
+задача 2
+
+var newArr=[1,12,133,14,1345,15,33,44,555,101];
+for( var i=0;i<newArr.length;i++) {
+if( newArr[i]> 100){
+console.log(newArr[i]);
+}
+}
+
+Задача 3
+
+var obj= {
+name:"Anton",
+lastName: "Savel" ,
+age: 25 }
+console.log(obj.name);
+console.log(obj.lastName);
+console.log(obj.age);
+obj.work="IT";
+conole.log(obj.work);
+
+Задача 4
+
+function hello(human) {
+return('Privet, menya zovut '+ human.name + " " + human.lastName +' i mne ' + human.age + ' let ')
+};
+var test = hello(obj);
+alert(test);

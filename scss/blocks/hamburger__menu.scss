@@ -11,7 +11,7 @@
 
   .container {
     display: flex;
-    
+
   }
 
 }
@@ -19,19 +19,22 @@
 
 .hamburger__menu_header {
   @include flex-box;
-
+  padding-top:0.76923rem;
 
   .logo_block {
 
     .logo {
-      width: 40%;
+      width: 7.07692rem;
+      height: 5.30769rem;
     }
   }
 
   .close_link {
 
     display: block;
-    margin-right: 5%;
+    margin-right: 2%;
+
+    cursor: pointer;
   }
 
 }

@@ -295,7 +295,7 @@ img {
       margin-bottom: 8%; } }
 
 .description {
-  width: 50%; }
+  width: 55%; }
   @media screen and (max-width: 768px) {
     .description {
       width: 99%; } }
@@ -755,6 +755,9 @@ img {
     border-top: 0.38462rem solid #f9b43b;
     left: 0;
     top: 35%; }
+    @media screen and (max-width: 768px) {
+      .item__link:before {
+        left: 15%; } }
     @media screen and (max-width: 768px) {
       .item__link:before {
         left: 20%; } }
@@ -1489,12 +1492,15 @@ img {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 0.76923rem; }
   .hamburger__menu_header .logo_block .logo {
-    width: 40%; }
+    width: 7.07692rem;
+    height: 5.30769rem; }
   .hamburger__menu_header .close_link {
     display: block;
-    margin-right: 5%; }
+    margin-right: 2%;
+    cursor: pointer; }
 
 .hamburger_nav {
   -ms-flex-item-align: center;
@@ -1581,6 +1587,12 @@ img {
       -ms-flex-align: center;
       align-items: center;
       height: 100%; }
+      @media screen and (max-width: 768px) {
+        .burger_slider_section .container .slide {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
     .burger_slider_section .container .slide__burger {
       position: relative;
       width: 50%; }
@@ -1590,6 +1602,12 @@ img {
         left: 0;
         width: 10%;
         height: 18%; }
+        @media screen and (max-width: 768px) {
+          .burger_slider_section .container .slide__burger .kkal {
+            right: 0;
+            top: -15%;
+            bottom: initial;
+            left: initial; } }
       .burger_slider_section .container .slide__burger .components {
         display: none;
         opacity: 1;
@@ -1604,12 +1622,27 @@ img {
         position: absolute;
         top: -15%;
         left: 15%;
-        width: 60%;
+        width: 70%;
         background-color: rgba(255, 255, 255, 0.9); }
+        @media screen and (max-width: 768px) {
+          .burger_slider_section .container .slide__burger .components {
+            padding-top: 3%; } }
+        .burger_slider_section .container .slide__burger .components .cross_block {
+          display: none; }
+          @media screen and (max-width: 768px) {
+            .burger_slider_section .container .slide__burger .components .cross_block {
+              display: block;
+              position: absolute;
+              right: 4%;
+              top: 4%;
+              width: 1.15385rem;
+              height: 1.15385rem; } }
         .burger_slider_section .container .slide__burger .components .components_row {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -1620,6 +1653,10 @@ img {
           -ms-flex-pack: distribute;
           justify-content: space-around;
           height: 3.84615rem; }
+          @media screen and (max-width: 768px) {
+            .burger_slider_section .container .slide__burger .components .components_row {
+              height: 2.69231rem;
+              margin-right: 15%; } }
           .burger_slider_section .container .slide__burger .components .components_row .svg_icon {
             width: 12%; }
           .burger_slider_section .container .slide__burger .components .components_row .ingridient {
@@ -1637,6 +1674,19 @@ img {
           display: flex; }
     .burger_slider_section .container .slide__description {
       width: 50%; }
+      @media screen and (max-width: 768px) {
+        .burger_slider_section .container .slide__description {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 80%;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; } }
       .burger_slider_section .container .slide__description .header__description {
         display: block;
         font-family: 'Gagalin';
@@ -1645,11 +1695,17 @@ img {
         font-size: 5.46154rem;
         line-height: 1;
         color: #fff; }
+        @media screen and (max-width: 768px) {
+          .burger_slider_section .container .slide__description .header__description {
+            text-align: center; } }
       .burger_slider_section .container .slide__description .main_description {
         color: #fff;
         text-transform: initial;
         margin-top: 5%;
         font-size: 1.07692rem; }
+        @media screen and (max-width: 768px) {
+          .burger_slider_section .container .slide__description .main_description {
+            text-align: center; } }
       .burger_slider_section .container .slide__description .price_block {
         margin-top: 3%;
         display: -webkit-box;

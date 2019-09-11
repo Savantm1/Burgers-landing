@@ -1,10 +1,12 @@
 .hamburger__menu {
-  display: none;
-  position: absolute;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
   background-color: #2f3234;
 
   z-index: 1000;

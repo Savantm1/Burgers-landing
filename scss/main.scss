@@ -1,5 +1,3 @@
-@import "../scss/_misc/normalize.css";
-
 @import "../scss/_misc/media.scss";
 @import "../scss/_misc/fonts.scss";
 @import "../scss/_misc/mixins.scss";
@@ -12,13 +10,12 @@
 @import "../scss/blocks/header.scss";
 @import "../scss/blocks/nav.scss";
 @import "../scss/blocks/order__link.scss";
-@import "../scss/blocks/slider.scss";
 @import "../scss/blocks/welcome.scss";
 @import "../scss/blocks/burger.scss";
 @import "../scss/blocks/description.scss";
 @import "../scss/blocks/arrow_next.scss";
 
-@import "../scss/blocks/slider.scss";
+@import "../scss/blocks/paginator.scss";
 
 @import "../scss/blocks/features.scss";
 @import "../scss/blocks/features__header.scss";

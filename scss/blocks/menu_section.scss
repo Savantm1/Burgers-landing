@@ -38,7 +38,6 @@
         opacity: 1;
       }
 
-      // .menu-acco__close {}
 
       .menu-acco__content {
         max-width: rem(540px);
@@ -57,7 +56,7 @@
 
 
   @include phones {
-    width:6.7rem;
+    width: 6.7rem;
   }
 
   &:nth-child(2) {
@@ -88,7 +87,7 @@
 
   &--vegans {
     background-image: url("../img/vegan_menu.png");
-    background-position-x: rem(160px);
+    background-position-x: center;
   }
 
   &--diet {
@@ -108,12 +107,12 @@
   left: 48%;
   bottom: -10%;
 
-  @include tablets(){
+  @include tablets() {
     bottom: -7%;
 
   }
 
-  @include phones(){
+  @include phones() {
     bottom: -5%;
 
   }
@@ -140,6 +139,7 @@
   position: absolute;
   line-height: 1.76em;
   font-size: rem(14px);
+  text-transform: initial;
   color: #fff;
   padding: rem(55px) rem(34px);
   opacity: 0;

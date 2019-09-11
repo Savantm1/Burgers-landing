@@ -1,15 +1,15 @@
-.slider {
-  z-index: 1;
+.paginator {
+  z-index: 100;
   position: fixed;
-  right: 8.88%;
-  top: 27%;
+  right: rem(40px);
+  top: 50%;
   transform: translateY(-50%);
 
   @include tablets() {
     display: none;
   }
 
-  .slider__list {
+  .paginator__list {
     @include link_style_none;
     @include list_style_none;
     @include flex-box;
@@ -17,12 +17,12 @@
     flex-direction: column;
   }
 
-  .slider__item {
+  .paginator__item {
     display: flex;
     margin-bottom: rem(5px);
   }
 
-  .slider__link {
+  .paginator__link {
     box-sizing: border-box;
     display: block;
     position: relative;
@@ -33,10 +33,15 @@
     width: rem(16px);
     border: rem(1px) solid transparent;
     border-radius: 50%;
+    transition: all 0.3s;
 
     cursor: pointer;
 
     &--active {
+      border-color: #fff;
+    }
+
+    &:hover {
       border-color: #fff;
     }
 

@@ -989,7 +989,7 @@ img {
     .menu__title {
       font-size: 4.15385rem;
       top: 1%;
-      left: 12%; } }
+      left: 4%; } }
 
 .contacts {
   overflow: hidden;
@@ -1300,7 +1300,7 @@ img {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-      margin-top: 9%; } }
+      margin-top: 1.15385rem; } }
 
 .checkbox_block {
   display: -webkit-box;
@@ -1318,7 +1318,7 @@ img {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-      margin-top: 4%; } }
+      margin-top: 0.76923rem; } }
 
 .form_radio {
   position: relative;
@@ -1414,7 +1414,7 @@ img {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-      margin-top: 11%; } }
+      margin-top: 1.15385rem; } }
 
 .hamburger__menu {
   display: block;

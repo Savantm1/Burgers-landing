@@ -117,7 +117,7 @@
 
   @include phones {
     align-self: center;
-    margin-top:9%;
+    margin-top: rem(15px);
   }
 }
 
@@ -131,7 +131,7 @@
 
   @include phones {
     align-self: center;
-    margin-top:4%;
+    margin-top: rem(10px);
   }
 }
 
@@ -233,7 +233,7 @@
 
   @include phones {
     align-self: center;
-    margin-top:11%;
+    margin-top: rem(15px);
   }
 }
 

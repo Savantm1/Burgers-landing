@@ -1707,3 +1707,33 @@ img {
           -ms-flex-item-align: end;
           align-self: flex-end;
           margin-right: 5%; }
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.6);
+  overflow: scroll; }
+  .overlay .modal {
+    width: 15.38462rem;
+    height: 8.46154rem;
+    background-color: #fff;
+    border-radius: 0.38462rem; }
+    .overlay .modal .overlay_message {
+      text-transform: initial;
+      text-align: center;
+      margin-top: 1.53846rem; }
+    .overlay .modal .btn {
+      margin: 1.53846rem 3.84615rem;
+      text-align: center; }

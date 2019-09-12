@@ -1,0 +1,15 @@
+.overlay {
+  position: absolute;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #2f3234; }
+  .overlay .modal {
+    height: 500px; }

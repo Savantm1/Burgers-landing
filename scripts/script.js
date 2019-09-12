@@ -5,8 +5,10 @@ var toggle_btn = document.querySelectorAll('.item__link');
 var accordeon__item = document.querySelectorAll('.accordeon__item');
 var i;
 var paginator_item = document.querySelectorAll('.paginator__link');
+var wrapper = document.querySelector('.wrapper');
 
 
+//menu
 hamburger_btn.addEventListener('click', function (evt) {
   evt.preventDefault();
   hamburger_menu.style.height = '100%';
@@ -18,6 +20,9 @@ close_btn.addEventListener('click', function (evt) {
   hamburger_menu.style.height = '0%';
   hamburger_menu.style.overflow = 'hidden';
 });
+
+
+
 
 // acco -team
 
@@ -129,3 +134,81 @@ $(document).ready(function () {
     }, 500);
   });
 });
+
+
+//form
+
+const myForm = document.querySelector('#form');
+const sendBtn = document.querySelector('#submitBtn');
+
+sendBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+
+
+  wrapper.appendChild(createOverlay());
+
+  function createOverlay() {
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add('overlay');
+
+    const template = document.querySelector("#template");
+    overlayElement.innerHTML = template.innerHTML;
+
+    const closeElement = overlayElement.querySelector(".overlay_close");
+    closeElement.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      wrapper.removeChild(overlayElement);
+    });
+
+    return overlayElement;
+  };
+
+  if (validateForm(myForm)) {
+
+    const data = {
+      name: myForm.elements.name.value,
+      phone: myForm.elements.phone.value,
+      comment: myForm.elements.comment.value
+    };
+
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.send(JSON.stringify(data));
+    xhr.addEventListener('load', function () {
+      if (xhr.response.status) {
+        //overlay должен быть здесь, но возникает ошибка при отправке формы
+
+
+      }
+    });
+  }
+});
+
+function validateForm(form) {
+  let valid = true;
+  if (!validateField(form.elements.name)) {
+    valid = false;
+  }
+  if (!validateField(form.elements.phone)) {
+    valid = false;
+  }
+
+  if (!validateField(form.elements.comment)) {
+    valid = false;
+  }
+
+  return valid;
+}
+
+
+
+function validateField(field) {
+  if (!field.checkValidity()) {
+
+    return false;
+  } else {
+
+    return true;
+  }
+}

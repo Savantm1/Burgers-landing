@@ -1,0 +1,31 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(2b, 2b, 2b, 0.6);
+  overflow: scroll;
+
+
+  .modal {
+    width: rem(200px);
+    height: rem(110px);
+    background-color: #fff;
+    border-radius: rem(5px);
+
+    .overlay_message {
+      text-transform: initial;
+      text-align: center;
+      margin-top: rem(20px);
+    }
+
+    .btn {
+      margin: rem(20px) rem(50px);
+      text-align: center;
+    }
+  }
+}

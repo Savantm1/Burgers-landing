@@ -1,0 +1,25 @@
+{
+  "name": "Burgers-landing",
+  "version": "1.0.0",
+  "description": "https://savantm1.github.io/Burgers-landing/.",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Savantm1/Burgers-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Savantm1/Burgers-landing/issues"
+  },
+  "homepage": "https://github.com/Savantm1/Burgers-landing#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rm": "^2.0.0"
+  }
+}

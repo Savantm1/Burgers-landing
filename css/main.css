@@ -664,7 +664,12 @@ img {
   padding: 0; }
   .accordeon .accordeon__item {
     text-align: center;
-    padding-bottom: 5%; }
+    margin-bottom: 2.30769rem;
+    height: 2rem;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
     @media screen and (max-width: 480px) {
       .accordeon .accordeon__item {
         margin-bottom: 2%; } }
@@ -683,6 +688,28 @@ img {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; } }
+  .accordeon .accordeon_item--active {
+    height: 10rem;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    @media screen and (max-width: 768px) {
+      .accordeon .accordeon_item--active {
+        height: 20rem; } }
+    .accordeon .accordeon_item--active .item_title {
+      color: #f9b43b; }
+    .accordeon .accordeon_item--active .item__link:before {
+      content: "";
+      position: absolute;
+      border-left: 0.38462rem solid transparent;
+      border-right: 0.38462rem solid transparent;
+      border-bottom: 0.38462rem solid #f9b43b;
+      border-top: 0.38462rem solid transparent;
+      left: -1.53846rem;
+      top: 35%;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
 
 .item__link {
   display: inline-block;
@@ -696,7 +723,10 @@ img {
     border-left: 0.38462rem solid transparent;
     border-right: 0.38462rem solid transparent;
     border-top: 0.38462rem solid #f9b43b;
-    left: -20px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: -1.53846rem;
     top: 35%; }
   .item__link .item_title {
     display: block;
@@ -728,9 +758,7 @@ img {
   line-height: 1.84615rem;
   text-align: center;
   margin-top: 0.76923rem;
-  color: #fff;
-  height: 0;
-  overflow: hidden; }
+  color: #fff; }
   .item_content .item__img {
     border-radius: 50%;
     overflow: hidden;
@@ -785,23 +813,6 @@ img {
       -ms-flex-align: center;
       align-items: center;
       margin-left: 0; } }
-
-.accordeon_item--active .item_content {
-  height: auto;
-  overflow: visible; }
-
-.accordeon_item--active .item_title {
-  color: #f9b43b; }
-
-.accordeon_item--active .item__link:before {
-  content: "";
-  position: absolute;
-  border-left: 0.38462rem solid transparent;
-  border-right: 0.38462rem solid transparent;
-  border-bottom: 0.38462rem solid #f9b43b;
-  border-top: 0.38462rem solid transparent;
-  left: 0;
-  top: 35%; }
 
 .team_section__side {
   width: 50%;
@@ -932,14 +943,6 @@ img {
   -o-transition: max-width 1s;
   transition: max-width 1s; }
 
-.menu-acco__close {
-  display: none;
-  position: absolute;
-  z-index: 100;
-  right: 3%;
-  top: 3%;
-  display: none; }
-
 .menu-acco__text {
   position: absolute;
   line-height: 1.76em;
@@ -951,11 +954,11 @@ img {
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
-  -webkit-transition: opacity 4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: opacity 4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: opacity 4s cubic-bezier(0.645, 0.045, 0.355, 1), transform 3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: opacity 4s cubic-bezier(0.645, 0.045, 0.355, 1), transform 3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: opacity 4s cubic-bezier(0.645, 0.045, 0.355, 1), transform 3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  -webkit-transition: opacity 3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: opacity 3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 2s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .menu_section {
   background: url("../img/menu_bg.png") 50% no-repeat;
@@ -989,7 +992,7 @@ img {
     .menu__title {
       font-size: 4.15385rem;
       top: 1%;
-      left: 4%; } }
+      left: 0.76923rem; } }
 
 .contacts {
   overflow: hidden;

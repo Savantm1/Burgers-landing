@@ -29,12 +29,17 @@ close_btn.addEventListener('click', function (evt) {
 $(".item__link").on("click", function (e) {
   e.preventDefault();
   const item = this.parentNode;
-
-  if ($(item).hasClass("accordeon_item--active")) $(item).removeClass("accordeon_item--active");
-  else {
-    $(".accordeon_item").removeClass("accordeon_item--active");
-    $(item).addClass("accordeon_item--active");
+  if ($(item).hasClass("accordeon_item--active")) {
+    $(item).removeClass("accordeon_item--active");
   }
+  else {
+    for( i =0; i< accordeon__item.length; i++) {
+      accordeon__item[i].classList.remove('accordeon_item--active');
+    };
+
+    $(item).addClass("accordeon_item--active");
+  };
+
 });
 
 
@@ -44,9 +49,14 @@ $(".menu-acco__trigger").on("click", function (e) {
   e.preventDefault();
   const item = this.parentNode;
 
-  if ($(item).hasClass("active")) $(item).removeClass("active");
+  if ($(item).hasClass("active")) {
+    $(item).removeClass("active");
+  }
   else {
-    $(".menu-acco__trigger").removeClass("active");
+    for (i = 0; i < 3; i++) {
+      $(".menu-acco__item").removeClass("active");
+    };
+
     $(item).addClass("active");
   }
 });
@@ -179,7 +189,6 @@ sendBtn.addEventListener('click', function (evt) {
       if (xhr.response.status) {
         //overlay должен быть здесь, но возникает ошибка при отправке формы
 
-
       }
     });
   }
@@ -201,8 +210,6 @@ function validateForm(form) {
   return valid;
 }
 
-
-
 function validateField(field) {
   if (!field.checkValidity()) {
 
@@ -212,3 +219,7 @@ function validateField(field) {
     return true;
   }
 }
+
+
+//feedback
+

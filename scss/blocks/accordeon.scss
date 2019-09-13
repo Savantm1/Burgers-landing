@@ -3,7 +3,10 @@
 
   .accordeon__item {
     text-align: center;
-    padding-bottom: 5%;
+    margin-bottom: rem(30px);
+    height: 2rem;
+    overflow: hidden;
+    transition: all 0.5s;
 
     @include phones {
       margin-bottom: 2%;
@@ -14,6 +17,38 @@
     @include flex-box;
     flex-direction: column;
   }
+
+      .accordeon_item--active {
+
+        height: 10rem;
+        transition: all 0.5s;
+
+
+        @include tablets(){
+          height: 20rem;
+
+        }
+      .item_title {
+        color: $yellow ;
+      }
+
+      .item__link:before {
+        content: "";
+        position: absolute;
+        border-left: rem(5px) solid transparent;
+        border-right: rem(5px) solid transparent;
+        border-bottom: rem(5px) solid $yellow;
+        border-top: rem(5px) solid transparent;
+
+        left: rem(-20px);
+        top: 35%;
+
+        transition: all 0.5s;
+      }
+      }
+
+
+
 
 }
 
@@ -31,7 +66,9 @@
     border-right: rem(5px) solid transparent;
     border-top: rem(5px) solid $yellow;
 
-    left: -20px;
+    transition: all 0.5s;
+
+    left: rem(-20px);
     top: 35%;
 
   }
@@ -56,10 +93,6 @@
   @include font_description;
   margin-top: rem(10px);
   color: #fff;
-
-
-  height: 0;
-  overflow: hidden;
 
   .item__img {
     border-radius: 50%;
@@ -110,25 +143,3 @@
 }
 
 
-.accordeon_item--active {
-  .item_content {
-    height: auto;
-    overflow: visible;
-  }
-
-  .item_title {
-    color: $yellow ;
-  }
-
-  .item__link:before {
-    content: "";
-    position: absolute;
-    border-left: rem(5px) solid transparent;
-    border-right: rem(5px) solid transparent;
-    border-bottom: rem(5px) solid $yellow;
-    border-top: rem(5px) solid transparent;
-
-    left: 0;
-    top: 35%;
-  }
-}

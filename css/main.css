@@ -43,7 +43,9 @@ html {
 body {
   font-family: 'Ubuntu';
   line-height: 1.42;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -ms-touch-action: none;
+  touch-action: none; }
 
 .container {
   width: 95%;
@@ -333,8 +335,6 @@ img {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer; }
-    .paginator .paginator__link--active {
-      border-color: #fff; }
     .paginator .paginator__link:hover {
       border-color: #fff; }
     .paginator .paginator__link:before {
@@ -351,6 +351,8 @@ img {
       transform: translate(-50%, -50%); }
     .paginator .paginator__link:last-child {
       margin-bottom: 0; }
+  .paginator .active {
+    border-color: #fff; }
 
 .features {
   overflow: hidden;

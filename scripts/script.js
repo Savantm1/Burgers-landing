@@ -224,28 +224,47 @@ const sections = $(".section");
 const display = $('.one-page-scroll');
 let inScroll = false;
 
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
+const countPositionPercent = sectionEq => {
+  return `${sectionEq * -100}%`;
+};
+
+const switchActiveClass = (elems, elemEq) => {
+  elems
+    .eq(elemEq)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
+};
+
+const unBlockScroll = () => {
+  const transitionDuration = 1000;
+  const touchScrollInertionTime = 300;
+
+  setTimeout(() => {
+    inScroll = false;
+  }, transitionDuration + touchScrollInertionTime);
+};
+
+
 const performTransition = sectionEq => {
-  if (inScroll === false) {
-    inScroll = true;
-    const position = `${(sectionEq) *  - 100}%`;
+  if (inScroll) return;
 
-    sections
-      .eq(sectionEq)
-      .addClass("active")
-      .siblings()
-      .removeClass("active");
+  inScroll = true;
+  const position = countPositionPercent(sectionEq);
+  const switchFixedMenuClass = () => switchActiveClass($(".paginator__link"), sectionEq);
 
-    display.css({
-      transform: `translateY(${position})`
-    });
+  switchFixedMenuClass();
+  switchActiveClass(sections, sectionEq);
 
+  display.css({
+    transform: `translateY(${position})`
+  });
 
-    setTimeout(() => {
-
-      inScroll = false;
-
-    }, 1000 + 300);
-  }
+  unBlockScroll();
 };
 
 const scrollViewport = direction => {
@@ -287,7 +306,7 @@ $(document).on({
 });
 
 $('.wrapper').on('touchmove', e => {
-  e.preventDefault()
+  e.preventDefault();
 });
 
 
@@ -303,8 +322,9 @@ if (isMobile) {
     "touchmove",
     e => {
       e.preventDefault();
-    },
-    { passive: false }
+    }, {
+      passive: false
+    }
   );
 
   $("body").swipe({

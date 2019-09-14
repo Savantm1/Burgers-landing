@@ -37,9 +37,6 @@
 
     cursor: pointer;
 
-    &--active {
-      border-color: #fff;
-    }
 
     &:hover {
       border-color: #fff;
@@ -60,6 +57,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .active {
+    border-color: #fff;
   }
 
 

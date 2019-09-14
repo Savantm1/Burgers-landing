@@ -291,3 +291,24 @@ $("[data-scroll-to]").on("click", e => {
   e.preventDefault();
   performTransition(parseInt($(e.currentTarget).attr("data-scroll-to")));
 });
+
+
+// разрешаем свайп на мобильниках
+if (isMobile) {
+  window.addEventListener(
+    "touchmove",
+    e => {
+      e.preventDefault();
+    },
+    { passive: false }
+  );
+
+  $("body").swipe({
+    swipe: (event, direction) => {
+      let scrollDirecrion;
+      if (direction === "up") scrollDirecrion = "next";
+      if (direction === "down") scrollDirecrion = "prev";
+      scrollViewport(scrollDirecrion);
+    }
+  });
+}

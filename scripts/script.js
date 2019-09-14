@@ -286,6 +286,10 @@ $(document).on({
   }
 });
 
+$('.wrapper').on('touchmove', e => {
+  e.preventDefault()
+});
+
 
 $("[data-scroll-to]").on("click", e => {
   e.preventDefault();

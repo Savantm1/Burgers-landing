@@ -97,20 +97,20 @@ left.addEventListener("click", function () {
 
 //menu
 
-// $(document).ready(function () {
-//   $(".hamburger__list").on("click", "a", function (event) {
-//     event.preventDefault();
-//     let id = $(this).attr('href'),
-//       //узнаем высоту от начала страницы до блока на который ссылается якорь
-//       top = $(id).offset().top;
-//     hamburger_menu.style.height = '0%';
-//     hamburger_menu.style.overflow = 'hidden';
-//     //анимируем переход на расстояние - top за 500 мс
-//     $('body,html').animate({
-//       scrollTop: top
-//     }, 500);
-//   });
-// });
+$(document).ready(function () {
+  $(".hamburger__list").on("click", "a", function (event) {
+    event.preventDefault();
+    let id = $(this).attr('href'),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    hamburger_menu.style.height = '0%';
+    hamburger_menu.style.overflow = 'hidden';
+    //анимируем переход на расстояние - top за 500 мс
+    $('body,html').animate({
+      scrollTop: top
+    }, 500);
+  });
+});
 
 
 // //paginator

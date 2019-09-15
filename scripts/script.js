@@ -218,7 +218,7 @@ function validateField(field) {
   }
 };
 
-
+// one page scroll
 
 const sections = $(".section");
 const display = $('.one-page-scroll');

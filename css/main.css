@@ -72,6 +72,7 @@ body {
   overflow: hidden; }
 
 .section {
+  min-height: 50rem;
   height: 100%; }
 
 .one-page-scroll {

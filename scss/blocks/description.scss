@@ -2,12 +2,13 @@
   width: 55%;
 
   @include tablets() {
-    width: 99%;
+    width: 100%;
   }
 
   .description__item {
 
     @include font_header;
+    font-size: 4.5rem;
 
     margin-top: 6%;
 
@@ -16,9 +17,6 @@
       text-align: center;
     }
 
-    @include phones() {
-      font-size: rem(67px);
-    }
   }
 
   .description__item:last-child {
@@ -26,8 +24,9 @@
     @include font_lifehack;
 
     margin-top: 2%;
-    font-size: rem(64px);
-    line-height: rem(64px);
+    // font-size: rem(64px);
+    line-height: 4rem;
+    font-size: 4rem;
 
     @include phones() {
       margin-top: 0;

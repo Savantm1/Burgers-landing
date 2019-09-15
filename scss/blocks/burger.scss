@@ -4,15 +4,14 @@
 
      @include tablets() {
        margin-left: 0;
-       margin-top: 10%;
        width:65%;
        display: flex;
        justify-content: center;
      }
 
      @include phones() {
-      width:100%;
-      margin-bottom: 8%;
+      width:70%;
+      margin-bottom: 5%;
      }
 
    }

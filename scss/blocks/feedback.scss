@@ -1,9 +1,7 @@
 .feedback {
 
   @include flex-box;
-  // height: 100vh;
   filter: grayscale(100%);
-  // min-height: rem(650px);
   overflow: hidden;
 }
 

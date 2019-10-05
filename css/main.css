@@ -96,7 +96,7 @@ img {
 .first_section {
   height: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: url("../img/bg-first section.jpg") center center no-repeat;
   background-size: cover; }
@@ -359,7 +359,7 @@ img {
 
 .features {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: url("../img/bg.jpg") center center no-repeat;
   background-size: cover;
@@ -619,7 +619,7 @@ img {
   overflow: hidden;
   background: url("../img/team_bg.png") center center no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative; }
 
@@ -1003,7 +1003,7 @@ img {
 
 .contacts {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: url("../img/map image.png") center center no-repeat;
   background-size: cover;
@@ -1127,7 +1127,7 @@ img {
 
 .form_section {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: url("../img/bg-form.png") center center no-repeat;
   background-size: cover;

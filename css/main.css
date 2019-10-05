@@ -72,7 +72,6 @@ body {
   overflow: hidden; }
 
 .section {
-  min-height: 50rem;
   height: 100%; }
 
 .one-page-scroll {
@@ -113,7 +112,8 @@ img {
   align-items: center;
   align-items: center;
   padding-top: 0.76923rem;
-  font-weight: 500; }
+  font-weight: 500;
+  z-index: 3; }
   .header .logo {
     width: 7.07692rem;
     height: 5.30769rem; }
@@ -1715,6 +1715,32 @@ img {
           -ms-flex-item-align: end;
           align-self: flex-end;
           margin-right: 5%; }
+
+.player {
+  background: url("../img/player_bg .png") center center no-repeat;
+  background-size: cover; }
+  .player .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .player_header {
+    padding-top: 0;
+    display: block;
+    font-family: 'Gagalin';
+    color: #f9b43b;
+    font-size: 5.53846rem;
+    font-size: 4.61538rem;
+    color: #2f3234; }
 
 .overlay {
   display: -webkit-box;

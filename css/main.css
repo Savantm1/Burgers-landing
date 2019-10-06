@@ -1741,7 +1741,20 @@ img {
     color: #f9b43b;
     font-size: 5.53846rem;
     font-size: 4.61538rem;
-    color: #2f3234; }
+    color: #2f3234;
+    text-align: center; }
+
+#player {
+  width: 480px;
+  height: 320px; }
+  @media screen and (max-width: 768px) {
+    #player {
+      width: 400px;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    #player {
+      width: 90%;
+      height: 40%; } }
 
 .overlay {
   display: -webkit-box;

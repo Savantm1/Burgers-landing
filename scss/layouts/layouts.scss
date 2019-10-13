@@ -1,5 +1,5 @@
 html {
-  height:100%;
+  height: 100%;
 
   @include tablets() {
     font-size: 13px;
@@ -39,18 +39,19 @@ body {
   position: relative;
   width: 100%;
 
-  height:100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .section {
-  height:100%;
+  height: 100%;
+  min-height: 650px;
 }
 
 .one-page-scroll {
-  height:100%;
+  height: 100%;
   transition: transform 1s;
- }
+}
 
 .visually-hidden {
   position: absolute;
@@ -62,6 +63,6 @@ body {
 }
 
 img {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }

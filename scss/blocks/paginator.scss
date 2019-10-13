@@ -20,6 +20,12 @@
   .paginator__item {
     display: flex;
     margin-bottom: rem(5px);
+    border-radius: 50%;
+    border: rem(1px) solid transparent;
+  }
+
+  .active {
+    border-color: #fff;
   }
 
   .paginator__link {
@@ -59,9 +65,6 @@
     }
   }
 
-  .active {
-    border-color: #fff;
-  }
 
 
 }

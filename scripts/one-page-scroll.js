@@ -35,7 +35,7 @@ const performTransition = sectionEq => {
 
   inScroll = true;
   const position = countPositionPercent(sectionEq);
-  const switchFixedMenuClass = () => switchActiveClass($(".paginator__link"), sectionEq);
+  const switchFixedMenuClass = () => switchActiveClass($(".paginator__item"), sectionEq);
 
   switchFixedMenuClass();
   switchActiveClass(sections, sectionEq);

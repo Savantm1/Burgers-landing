@@ -220,8 +220,7 @@ function validateField(field) {
 // подключаем one page scroll
 const onePageScrollCheck = () => {
   if (screen.width > 480) {
-    document.write('<script type="text/javascript" src="scripts/one-page-scroll.js" ></sc' + 'ript>');
-    // $(".wrapper").css('overflow', 'hidden');
+    document.write('<script type="text/javascript" src="scripts/one-page-scroll.js" ></script>');
   } else {
     $(".wrapper").css('overflow', 'auto');
   };
